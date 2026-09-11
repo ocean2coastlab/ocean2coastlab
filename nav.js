@@ -27,10 +27,11 @@
 })();
 
 // ---- header background on scroll ----
+// 조금만 내려도 배경을 깔아, 스크롤되는 히어로 로고가 투명한 헤더 글자와 겹쳐 보이지 않게 한다
 const header = document.getElementById('site-header');
 if(header){
   window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 40);
+    header.classList.toggle('scrolled', window.scrollY > 10);
     setHeaderHeight();
   }, { passive:true });
 }

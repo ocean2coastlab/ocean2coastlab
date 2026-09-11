@@ -250,7 +250,8 @@ header.nav-open .nav-toggle span:nth-child(3){transform:translateY(-8px) rotate(
 .hero-logo{
   position:absolute;
   z-index:2;
-  top:clamp(54px, 6.5vw, 76px);
+  /* 헤더(브랜드 문구) 아래에서 시작하도록 — 모바일에서 헤더와 겹치던 문제 방지 */
+  top:max(clamp(54px, 6.5vw, 76px), var(--header-h, 77px));
   left:clamp(16px, 4vw, 56px);
   height:clamp(44px, 7vw, 84px);
   width:auto;
@@ -973,6 +974,9 @@ html, body{max-width:100%; overflow-x:hidden;}
   header.scrolled .brand-logo{height:28px;}
   .uni-logo{height:22px;}
   header.scrolled .uni-logo{height:20px;}
+  /* 좁은 폰에서도 브랜드 문구·메뉴 버튼·학교 로고가 한 줄에 들어가도록 */
+  .brand-text{font-size:clamp(0.78rem, 3.6vw, 1rem);}
+  .header-right{gap:12px;}
 
   .navlinks{gap:14px; font-size:0.82rem;}
   .page-banner.banner-center .eyebrow-line{font-size:0.96rem;}
