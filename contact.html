@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · 연안파랑연구실</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="wrap">
+    <a href="index.html" class="brand"><img src="Home/LAB_UI.png" alt="연안파랑연구실 로고" class="brand-logo" width="36" height="36"></a>
+    <div class="header-right">
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <a href="https://www.hanyang.ac.kr/home" target="_blank" rel="noopener noreferrer" class="uni-logo-link" aria-label="한양대학교 홈페이지"><img src="Home/HY_UI.png" alt="Hanyang University" class="uni-logo" width="120" height="36"></a>
+    </div>
+    <div class="navlinks" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="members.html">Members</a>
+      <a href="publication.html">Publication</a>
+      <a href="project-list.html">Project List</a>
+      <a href="pi.html">PI</a>
+      <a href="activities.html">Activity Archive</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-banner banner-center">
+    <div class="wrap">
+      <div class="eyebrow-line"><span class="dash"></span>CONTACT</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-layout">
+        <!-- 끌어서 이동·확대가 되는 실제 지도 (Google 지도 임베드, API 키 불필요)
+             장소명 대신 좌표로 지정 — 장소 정보 카드(별점·리뷰)가 뜨지 않는다 -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=37.2966682,126.8350067&z=17&hl=en&output=embed"
+            title="Hanyang University ERICA, Engineering Building 4"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <div class="contact-map-links">
+          <a href="https://map.naver.com/p/search/%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%204%EA%B3%B5%ED%95%99%EA%B4%80" target="_blank" rel="noopener noreferrer">네이버 지도에서 길찾기 →</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90+ERICA+%EC%A0%9C4%EA%B3%B5%ED%95%99%EA%B4%80" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-block contact-key">
+            <div class="label">Mail</div>
+            <div class="val"><a href="mailto:sahn03@hanyang.ac.kr">sahn03@hanyang.ac.kr</a></div>
+          </div>
+          <div class="contact-block contact-key">
+            <div class="label">Tel</div>
+            <div class="val"><a href="tel:+82314005571">031-400-5571</a></div>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-block">
+            <div class="label">Address</div>
+            <div class="val">55, Hanyangdaehak-ro, Sangnok-gu, Ansan-si, Gyeonggi-do, Republic of Korea<br>Engineering Building 4, Room 404-2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="minimal">
+  <div class="wrap footer-minimal">
+    <span>© Ocean to Coast Modeling Lab.</span>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

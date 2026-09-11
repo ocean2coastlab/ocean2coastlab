@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연안파랑연구실 · Ocean to Coast Modeling Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Outfit:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="wrap">
+    <a href="index.html" class="brand"><span class="brand-text">Ocean to Coast Modeling Lab. </span></a>
+    <div class="header-right">
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <a href="https://www.hanyang.ac.kr/home" target="_blank" rel="noopener noreferrer" class="uni-logo-link" aria-label="한양대학교 홈페이지"><img src="Home/HY_UI.png" alt="Hanyang University" class="uni-logo" width="120" height="36"></a>
+    </div>
+    <div class="navlinks" id="primary-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="members.html">Members</a>
+      <a href="publication.html">Publication</a>
+      <a href="project-list.html">Project List</a>
+      <a href="pi.html">PI</a>
+      <a href="activities.html">Activity Archive</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-video">
+      <canvas id="hero-waves"
+              data-amp="0.55" data-speed="1.65" data-bright="1.0"
+              data-spread="2.20" data-wave="1.35" data-horizon="0.2" data-quality="0"></canvas>
+    </div>
+    <img class="hero-logo" src="Home/LAB_UI.png" alt="연안파랑연구실 로고">
+    <!-- <div class="hero-fade"></div> -->
+    <div class="hero-inner wrap">
+      <!-- <div class="eyebrow-line"><span class="dash"></span>ADCIRC · SWAN · CADMAS-SURF 기반 수치모델링</div> -->
+      <h1 class="hero-title">Unlock the Ocean<br>Foresee the sea<br>Thrive on the Waves</h1>
+      <!-- <p class="hero-sub">
+        파랑과 조석, 해빈 변화의 물리 과정을 수치모델로 재현하고<br>
+        위성·부이 관측자료와 비교 검증하며,<br>
+        한반도 연안역의 장기적인 변화를 추적합니다.
+      </p> -->
+      <!-- <div class="hero-meta"> -->
+        <!-- <div><span class="num">12</span><span class="lbl">진행 중 연구과제</span></div>
+        <div><span class="num">6</span><span class="lbl">연안 관측정점 운용</span></div>
+        <!-- <div><span class="num">2015</span><span class="lbl">연구실 설립</span></div> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="work-with-us">
+      <div class="eyebrow-line"><span class="dash"></span>Work With Us</div>
+      <p class="lead">We predict the ocean, harness ocean energy,<br>and develop innovative solutions for the future.</p>
+      <p class="sub">We welcome those interested in numerical modeling, ocean renewable energy development,<br>and extreme ocean and coastal hazard prediction.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="minimal">
+  <div class="wrap footer-minimal spread">
+    <div class="addr">
+      <span><strong>Location</strong> · 55, Hanyangdaehak-ro, Sangnok-gu, Ansan-si, Gyeonggi-do, Republic of Korea, Engineering Building 4, Room 404-2</span>
+    </div>
+    <div class="addr">
+      <span><strong>Mail</strong> · sahn03@hanyang.ac.kr</span>
+      <span><strong>Tel</strong> · 031-400-5571</span>
+    </div>
+  </div>
+</footer>
+
+<script src="waves.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
